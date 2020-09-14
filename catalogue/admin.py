@@ -6,3 +6,4 @@ from .models import ProductSupplier,ProductCategory,Product
 admin.site.register(ProductSupplier)
 admin.site.register(ProductCategory)
 admin.site.register(Product)
+

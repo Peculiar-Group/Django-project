@@ -6,5 +6,9 @@ def products_list(request):
     products = Product.objects.all()
     return render(request, 'products_list.html', {'products': products})
 
-def check(request):
-    return render(request,'check.html')
+
+
+def product_details(request, product_id):
+    product = Product.objects.get(id=product_id)
+    # images = product.images.all()
+    return render(request,'product_details.html', {'product':product})

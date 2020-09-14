@@ -1,6 +1,6 @@
 
+<!-- {% load static %} -->
 <!Doctype html>
-{% load static %}
 <html>
     <head>
         
@@ -25,13 +25,9 @@
     
         <div class="col-lg-4">
             <img  src="{{ product.product_image.url }}" />
-        <h3>{{ product.title }} {{product.kiosk.currency}} 
-            <br>
-           
-            {{product.selling_price}}</h3>
-        <p> {{ product.description }} </p>
-    
-        <a href="/check" class="btn btn-outline-warning" role="button">View</a>
+            <p><a href ="/products/{{product.id}}/">{{product.title}} {{product.kiosk.currency}} {{product.selling_price}} </a></p>
+                <br>
+            <p>{{ product.description }} </p>
     
     
     
@@ -49,7 +45,14 @@
            font-family: Brush Script Std;
            text-align: center;
        }
+       a{
+           color:black;
+           font-size:20px;
+       }
         </style>
 </div>
 </body>
 </html>
+
+
+
