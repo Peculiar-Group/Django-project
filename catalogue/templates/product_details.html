@@ -1,4 +1,4 @@
- <!-- {%load static%} -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,23 +36,32 @@
                   <div class="container">
                     <h1>Product Details</h1>
                   </div>
+                  <div class="con">
                   <h1>{{product.title}}</h1>
                   
                       <img src ={{product.product_image.url}}/>
                       <br>
                       <ol>
                     
-                      <li>{{product.kiosk.currency}} {{product.selling_price}}</li>
+                      <li>{{product.selling_price}}</li>
                       <p>{{ product.description }} </p>
                
               
                   </ol> 
+                </div>
                   </div>
                  </div>
                  <style>
                    .container{
                      background-color:limegreen;
                      height:60px;
+                   }
+                   #demo{
+                     text-align: center;
+                  
+                   }
+                   .con{
+                    padding-top: 150px;
                    }
                  </style>
                  </div>
